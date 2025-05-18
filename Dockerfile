@@ -4,7 +4,7 @@ FROM php:8.1-apache
 RUN docker-php-ext-install mysqli pdo pdo_mysql && docker-php-ext-enable mysqli pdo pdo_mysql
 
 # Copia los archivos del proyecto (solo la app) a la carpeta pública
-COPY src/ /var/www/html/
+COPY . /var/www/html/
 
 # Copia el .env por separado si lo necesitas
 COPY .env /var/www/html/.env
