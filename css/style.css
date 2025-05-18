@@ -1,0 +1,108 @@
+
+/* Estilos generales para el proyecto */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor de la página de recetas */
+.table-container {
+    width: 100%; /* Asegura que el contenedor ocupe el 90% del ancho disponible */
+    margin: 20px auto; /* Centra el contenedor */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de la tabla */
+table {
+    width: 90%; /* La tabla ocupa todo el ancho disponible */
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Estilo de las celdas de la tabla */
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    word-wrap: break-word; /* Permite que las palabras largas se rompan para que no salgan de la celda */
+}
+
+/* Cabecera de la tabla */
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Fila alterna de la tabla */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Botones de editar y eliminar */
+button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* Estilo para el botón de editar (azul) */
+button.edit {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Estilo para el botón de eliminar (rojo) */
+button.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Estilos para los formularios */
+form input[type="text"],
+form input[type="password"],
+form input[type="file"],
+form textarea {
+    width: 100%;
+    min-height: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Agregar un margen al botón "Salir" */
+.logout-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+}
